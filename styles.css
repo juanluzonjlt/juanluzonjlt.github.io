@@ -1,0 +1,118 @@
+/* Variables de colores */
+:root {
+    --primary: #4CAF50;
+    --secondary: #2196F3;  
+    --accent: #FF9800;
+    --background: #f5f6fa;
+    --text: #2c3e50;
+    --cuarto: #0c19db;
+    --quinto: #42b30d;
+}
+
+/* Estilo global */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+/* Fondo decorativo */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(45deg, var(--background) 25%, transparent 25%) -50px 0,
+        linear-gradient(-45deg, var(--background) 25%, transparent 25%) -50px 0,
+        linear-gradient(45deg, transparent 75%, var(--background) 75%) -50px 0,
+        linear-gradient(-45deg, transparent 75%, var(--background) 75%) -50px 0;
+    background-size: 100px 100px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Estilo del encabezado */
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in;
+}
+
+.header h1 {
+    font-size: 3em;
+    background: linear-gradient(45deg, var(--cuarto), var(--quinto));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Botones generales */
+.buttons-container, .topics-container {
+    display: grid;
+    gap: 20px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.topics-container {
+    display: none;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, var(--cuarto), var(--quinto));
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+/* Botones de niveles */
+.level-button, .topic-button {
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 1.3em;
+    color: white;
+    background-size: 200% 200%;
+    font-weight: 600;
+    animation: gradientFlow 3s ease infinite;
+}
+
+
+.easy { background: linear-gradient(45deg, var(--primary), var(--secondary)); }
+.medium { background: linear-gradient(45deg, var(--secondary), var(--accent)); }
+.hard { background: linear-gradient(45deg, var(--accent), var(--primary)); }
+#facil { background: linear-gradient(45deg, var(--primary), var(--secondary)); }
+#intermedio { background: linear-gradient(45deg, var(--secondary), var(--accent)); }
+#difícil { background: linear-gradient(45deg, var(--accent), var(--primary)); }
+
+
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .header h1 { font-size: 2em; }
+    .level-button { font-size: 1.1em; }
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes gradientFlow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
