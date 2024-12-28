@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortografía Española</title>
+    <!-- Fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <div class="header">
+        <h1>Ortografía Española</h1>
+    </div>
+
+    <!-- Botón para volver -->
+    <button class="back-button" onclick="goBack()">
+        Volver
+    </button>
+
+     <!-- Contenedor de niveles -->
+     <div class="buttons-container">
+        <button class="level-button easy" onclick="showTopics('easy')">
+            Fácil
+        </button>
+        <button class="level-button medium" onclick="showTopics('medium')">
+            Intermedio
+        </button>
+        <button class="level-button hard" onclick="showTopics('hard')">
+            Difícil
+        </button>
+    </div>
+
+    <!-- Contenedores de temas -->
+    <div class="topics-container" id="easyTopics">
+        <button class="topic-button" id="facil">Uso de mayúsculas</button>
+        <button class="topic-button" id="facil">Uso de tildes (acentos ortográficos)</button>
+        <button class="topic-button" id="facil">Uso de "b" y "v"</button>
+        <button class="topic-button" id="facil">Uso de "y" y "ll"</button>
+        <button class="topic-button" id="facil">Uso de la "s" y "z" al final de palabras</button>
+    </div>
+
+    <div class="topics-container" id="mediumTopics">
+        <button class="topic-button" id="intermedio">Uso de "s" y "c" en plurales y derivados</button>
+        <button class="topic-button" id="intermedio">Uso de "h" y "g"</button>
+        <button class="topic-button" id="intermedio">Uso de "s" y "c" en conjugación de verbos</button>
+        <button class="topic-button" id="intermedio">Las comillas, los paréntesis y los signos de puntuación</button>
+        <button class="topic-button" id="intermedio">Acentuación en palabras compuestas</button>
+    </div>
+
+    <div class="topics-container" id="hardTopics">
+        <button class="topic-button" id="difícil">Uso de los pronombres reflexivos y posesivos</button>
+        <button class="topic-button" id="difícil">Tildación de monosílabos</button>
+        <button class="topic-button" id="difícil">El uso de adverbios terminados en -mente</button>
+        <button class="topic-button" id="difícil">Ortografía en palabras con "s" y "x"</button>
+    </div>
+
+    <!-- Enlace al archivo JS externo -->
+    <script src="scripts.js"></script>
+</body>
+</html>
