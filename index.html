@@ -1,63 +1,160 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ortografía Española</title>
-    <!-- Fuente de Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Enlace al archivo CSS externo -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Romana | República Dominicana</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Encabezado -->
-    <div class="header">
-        <h1>Ortografía Española</h1>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="emblem-container fade-in">
+          <img src="Escudo_de_la_Provincia_La_Romana.svg.png" alt="Escudo de La Romana" class="emblem floating">
+        </div>
+        <h1>La Romana</h1>
+        <p class="fade-in">Una de las provincias más emblemáticas de la República Dominicana, donde el encanto caribeño se une con la modernidad</p>
+      </div>
     </div>
+  </section>
 
-    <!-- Botón para volver -->
-    <button class="back-button" onclick="goBack()">
-        Volver
-    </button>
+  <section class="section">
+    <div class="container">
+      <div class="map-section fade-in">
+        <h2>Ubicación Provincial</h2>
+        <div class="map-container">
+          <img src="mapa1.jpg" alt="Mapa de La Romana" class="map-image">
+        </div>
+        <p>Vista detallada de la provincia de La Romana y sus límites territoriales, mostrando las principales vías de comunicación y municipios colindantes</p>
+      </div>
 
-     <!-- Contenedor de niveles -->
-     <div class="buttons-container">
-        <button class="level-button easy" onclick="showTopics('easy')">
-            Fácil
-        </button>
-        <button class="level-button medium" onclick="showTopics('medium')">
-            Intermedio
-        </button>
-        <button class="level-button hard" onclick="showTopics('hard')">
-            Difícil
-        </button>
+      <div class="content-grid">
+        <div class="info-card fade-in">
+          <h3>Historia</h3>
+          <div class="info-illustration">
+            <img src="Dominicana-Altos_de_Chavon.jpg" alt="Abstract pattern" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <p>Fundada en 1897, La Romana ha evolucionado desde sus orígenes como ciudad azucarera hasta convertirse en un importante centro turístico y cultural. La provincia fue creada el 1 de enero de 1945 mediante la Ley No. 1021, durante el gobierno de Rafael Leónidas Trujillo.</p>
+        </div>
+
+        <div class="info-card fade-in">
+          <h3>Geografía</h3>
+          <div class="info-illustration">
+            <img src="map_romana.jpg" alt="Abstract pattern" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <p>Con una superficie de 653.95 km², La Romana combina hermosas playas, fértiles valles y un clima tropical privilegiado. La provincia cuenta con importantes recursos naturales, incluyendo el río Dulce y extensas áreas costeras que la convierten en un paraíso caribeño.</p>
+        </div>
+
+        <div class="info-card fade-in">
+          <h3>Límites Territoriales</h3>
+          <div class="info-illustration">
+            <img src="images2.jpeg" alt="Abstract pattern" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <p>La provincia de La Romana limita al norte con la provincia de Hato Mayor, al este con la provincia de La Altagracia, al sur con el Mar Caribe, y al oeste con la provincia de San Pedro de Macorís. Su ubicación estratégica le proporciona una importante salida al Mar Caribe y conexiones vitales con las provincias vecinas.</p>
+        </div>
+
+        <div class="info-card fade-in">
+          <h3>Desarrollo</h3>
+          <div class="info-illustration">
+            <img src="Bayahíbe.jpg" alt="Abstract pattern" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <p>La provincia se destaca por su desarrollo turístico, industrial y cultural, siendo un importante motor económico del país. Cuenta con modernos complejos turísticos, campos de golf de clase mundial y una infraestructura que la posiciona como destino preferido en el Caribe.</p>
+        </div>
+
+        <div class="info-card fade-in">
+          <h3>Región de Desarrollo</h3>
+          <div class="info-illustration">
+            <img src="maxresdefault.jpg" alt="Abstract pattern" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <p>La Romana forma parte de la Región Yuma, junto con las provincias de El Seibo y La Altagracia. Esta región se caracteriza por su fuerte desarrollo turístico y actividad agroindustrial, siendo uno de los polos económicos más importantes del país en el sector oriental.</p>
+        </div>
+      </div>
+
+      <div class="administrative-section fade-in">
+        <h2>División Administrativa</h2>
+        <div class="admin-grid">
+          <div class="admin-card">
+            <h3>Municipios</h3>
+            <ul>
+              <li>La Romana (municipio cabecera)</li>
+              <li>Guaymate</li>
+              <li>Villa Hermosa</li>
+            </ul>
+          </div>
+          <div class="admin-card">
+            <h3>Distritos Municipales</h3>
+            <ul>
+              <li>Caleta</li>
+              <li>Cumayasa</li>
+              <li>El Remolino (D.M)</li>
+              <li>Boca de Chavón (D.M)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card fade-in">
+          <h4 class="stat-number" data-target="653">0</h4>
+          <p>Km² de Extensión Territorial</p>
+        </div>
+        <div class="stat-card fade-in">
+          <h4 class="stat-number" data-target="1897">0</h4>
+          <p>Año de Fundación Histórica</p>
+        </div>
+        <div class="stat-card fade-in">
+          <h4 class="stat-number" data-target="3">0</h4>
+          <p>Municipios Principales</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Contenedores de temas -->
-    <div class="topics-container" id="easyTopics">
-        <button class="topic-button" id="facil">Uso de mayúsculas</button>
-        <button class="topic-button" id="facil">Uso de tildes (acentos ortográficos)</button>
-        <button class="topic-button" id="facil">Uso de "b" y "v"</button>
-        <button class="topic-button" id="facil">Uso de "y" y "ll"</button>
-        <button class="topic-button" id="facil">Uso de la "s" y "z" al final de palabras</button>
+  <section class="section background-section">
+    <div class="container">
+      <h2 class="section-title fade-in">Antecedentes Históricos</h2>
+      <div class="timeline fade-in">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Orígenes</h3>
+            <p>Antes de su fundación oficial, la región de La Romana era habitada por comunidades indígenas taínas. El nombre "La Romana" se cree que proviene de una balanza romana utilizada para pesar mercancías en el puerto local.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Era del Azúcar</h3>
+            <p>En 1911, la South Porto Rico Sugar Company estableció el ingenio azucarero Central Romana, que transformó la economía local y marcó el inicio del desarrollo industrial de la región.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Desarrollo Turístico</h3>
+            <p>En la década de 1970, con la construcción de Casa de Campo, La Romana comenzó su transformación hacia un destino turístico de primer nivel, diversificando su economía más allá de la industria azucarera.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Actualidad</h3>
+            <p>Hoy, La Romana es un importante centro turístico y cultural, que combina su herencia industrial con modernas instalaciones turísticas, preservando su rica historia y tradiciones locales.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="topics-container" id="mediumTopics">
-        <button class="topic-button" id="intermedio">Uso de "s" y "c" en plurales y derivados</button>
-        <button class="topic-button" id="intermedio">Uso de "h" y "g"</button>
-        <button class="topic-button" id="intermedio">Uso de "s" y "c" en conjugación de verbos</button>
-        <button class="topic-button" id="intermedio">Las comillas, los paréntesis y los signos de puntuación</button>
-        <button class="topic-button" id="intermedio">Acentuación en palabras compuestas</button>
+  <section class="section">
+    <div class="container">
+      <div class="map-section fade-in">
+        <h2>Contexto Nacional</h2>
+        <div class="map-container">
+          <img src="DomRepLaRomana.png" alt="La Romana en República Dominicana" class="map-image">
+        </div>
+        <p>Ubicación estratégica de La Romana en el contexto de la República Dominicana, destacando su importancia como provincia oriental y su conectividad con el resto del país</p>
+      </div>
     </div>
+  </section>
 
-    <div class="topics-container" id="hardTopics">
-        <button class="topic-button" id="difícil">Uso de los pronombres reflexivos y posesivos</button>
-        <button class="topic-button" id="difícil">Tildación de monosílabos</button>
-        <button class="topic-button" id="difícil">El uso de adverbios terminados en -mente</button>
-        <button class="topic-button" id="difícil">Ortografía en palabras con "s" y "x"</button>
-    </div>
-
-    <!-- Enlace al archivo JS externo -->
-    <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
